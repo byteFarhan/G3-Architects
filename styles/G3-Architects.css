@@ -178,7 +178,7 @@ main {
 }
 .feature-item {
   padding: 20px;
-  box-shadow: 1px 1px 1px 1px #131313;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
   border-radius: 8px;
   margin: 20px 0;
 }
@@ -275,6 +275,7 @@ footer p {
   .features {
     flex-direction: column-reverse;
   }
+
   .features-img-container {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -288,6 +289,9 @@ footer p {
   .display-features-contents {
     width: 100%;
     /* padding: 20px 0; */
+  }
+  .feature-item {
+    box-shadow: 1px 1px 1px 1px #131313;
   }
   .display-features-contents h3 {
     font-size: 35px;
@@ -351,6 +355,9 @@ footer p {
   }
   .features-content-container {
     text-align: center;
+  }
+  .feature-item {
+    box-shadow: 1px 1px 1px 1px #131313;
   }
   .display-features {
     flex-direction: column;
