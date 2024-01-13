@@ -239,6 +239,18 @@ main {
   align-items: center;
   margin-top: 40px;
 }
+/* footer styles */
+footer {
+  max-width: 1440px;
+  margin: 85px auto;
+  background-color: #fff4e7;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+}
+footer p {
+  color: #424242;
+}
 /* responsive styles */
 @media screen and (max-width: 576px) {
   header > .navigation {
@@ -312,6 +324,9 @@ main {
     /* flex-wrap: wrap; */
     gap: 35px;
   }
+  footer {
+    padding: 0 10px;
+  }
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -366,5 +381,8 @@ main {
     gap: 35px;
     padding: 0 10px;
     align-items: center;
+  }
+  footer {
+    padding: 0 15px;
   }
 }
