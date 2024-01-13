@@ -9,6 +9,11 @@ p {
   color: #727272;
   line-height: 26px;
 }
+h1,
+h2,
+h3,
+h4 {
+}
 
 .text-primary {
   color: #131313;
@@ -68,7 +73,6 @@ header .banner .banner-description {
   text-align: center;
 }
 header .banner .banner-description h1 {
-  color: var(--Dark-01, #131313);
   text-align: center;
   font-size: 64px;
   font-weight: 700;
@@ -113,13 +117,75 @@ main {
 }
 
 .features-content-container h2 {
-  color: var(--Dark-01, #131313);
   font-size: 45px;
   font-weight: 700;
   margin-bottom: 24px;
 }
 .features-content-container p {
   margin-bottom: 32px;
+}
+/* display features styles */
+.display-features {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  margin: 80px 0;
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px; */
+}
+.display-features-contents {
+  width: 40%;
+}
+.display-features-img-container {
+  flex-grow: 1;
+  text-align: right;
+  position: relative;
+}
+
+.display-features-img-container img {
+  object-fit: cover;
+  height: 980px;
+}
+.display-features-img-container .experience {
+  position: absolute;
+  background-color: #ff900e;
+  border-radius: 8px;
+  padding: 20px 30px;
+  color: white;
+  text-align: center;
+  bottom: -30px;
+  left: 0;
+  /* top: 10px; */
+}
+.display-features-img-container .experience h1 {
+  font-size: 65px;
+  font-weight: 700;
+}
+.display-features-contents h3 {
+  font-size: 45px;
+  font-weight: 700;
+  border-left: 5px solid #ff900e;
+  margin-bottom: 24px;
+}
+.display-features-contents p {
+}
+.feature-items {
+  /* display: flex;
+  gap: 20px;
+  flex-direction: column; */
+}
+.feature-item {
+  padding: 20px;
+  box-shadow: 1px 1px 1px 1px #131313;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+.feature-item h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 /* responsive styles */
 @media screen and (max-width: 576px) {
@@ -151,6 +217,29 @@ main {
   .features-content-container {
     text-align: center;
   }
+  .display-features {
+    flex-direction: column;
+    padding: 0 10px;
+  }
+  .display-features-contents {
+    width: 100%;
+    /* padding: 20px 0; */
+  }
+  .display-features-contents h3 {
+    font-size: 35px;
+  }
+  .display-features-img-container img {
+    height: auto;
+    width: 90%;
+  }
+  .display-features-img-container .experience {
+    padding: 10px 15px;
+    bottom: -30px;
+    left: 0;
+  }
+  .display-features-img-container .experience h1 {
+    font-size: 30px;
+  }
 }
 @media screen and (min-width: 576px) and (max-width: 992px) {
   header > .navigation {
@@ -174,5 +263,13 @@ main {
   }
   .features-content-container {
     text-align: center;
+  }
+  .display-features {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  .display-features-contents {
+    width: 100%;
+    /* padding: 0 20px; */
   }
 }
